@@ -1,11 +1,16 @@
 <script>
 import Button from "../reusable/Button.vue";
+import { ValidationObserver, ValidationProvider } from "vee-validate";
+
 export default {
-  components: { Button },
+  components: { 
+    Button,
+
+  },
   data: () => {
     return {
-      // @todo
-    };
+      //To-Do
+    }
   },
 };
 </script>
@@ -38,16 +43,12 @@ export default {
         Contact Form
       </p>
       <form
-        @submit="
-          (e) => {
-            e.preventDefault;
-          }
-        "
+        @submit="(e) => { e.preventDefault; }"
         action="https://getform.io/f/0c6790a5-fc37-4cf4-a889-461c353d2bf4" 
         method="POST"
         class="font-general-regular space-y-7"
       >
-        <div class="">
+        <div>
           <label
             class="block text-lg text-primary-dark dark:text-primary-light mb-2"
             for="name"
@@ -191,4 +192,6 @@ export default {
   </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+</style>
