@@ -72,9 +72,9 @@ export const state = () => ({
       category: "Education",
       img: "images/mobile-project-1.jpg",
       tag: "Music Education, Orchestra, Strings",
-      objectivesTitle: "Objective",
+      objectivesTitle: "Background",
       objectivesDetails:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.",
+        "As a string educator, my background is in pedagogy and instruction, having earned a Bachelor\'s in Music Education from the University of Louisville. While in college, I had the privilege to study privately with professors specializing in all stringed orchestral instruments. I gained a strong working knowledge of appropriate instrumental technique for children of all ages and abilities. As someone who loves to learn, I have a passion for the process of facilitating positive learning experiences for others.",
       projectImages: [
         {
           id: uuidv4(),
