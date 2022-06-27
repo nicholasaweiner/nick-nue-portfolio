@@ -12,7 +12,7 @@ export const state = () => ({
       tag: "Family, Elementor, WordPress",
       objectivesTitle: "Objective",
       objectivesDetails:
-        "When I was first asked to build this website, I felt compelled to work on it primarily because I had the most technical experience of anyone in my family in web design. But not long after beginning the project, it unexpectedly became a personally emotional journey. While working on the site, I enjoyed looking at my grandfather`s art. He was quite the painter in his time. Once featured in TIME Magazine in 1950, Grandpa won several prestigious artistic awards, with pieces showcased in New York, Pittsburgh, Chicago and Washington D.C. As I designed his site, I found the time I had with each of his paintings to be a visually moving experience.",
+        "I felt compelled to develop this site because, of those in my family, I had some technical experience with web design. Not long after starting, this project connected me with the grandfather I never had an opportunity to really know. I was captivated by his art. He was quite the painter in his time. Once featured in TIME Magazine in 1950, Grandpa won several prestigious artistic awards, with pieces showcased in New York, Pittsburgh, Chicago and Washington D.C. I found the time I had with each of his paintings to be a visually moving experience. I have enjoyed the incredible experience in sharing this project with a group of his former students at the Ivy School of Professional Art in Pittsburgh, who often share memorable stories of their experiences with him as a teacher and friend. This is the second iteration of the project, developed late last year using Elementor, a Wordpress plugin.",
       techTitle: "Tools & Technologies",
       projectImages: [
         {
@@ -36,6 +36,16 @@ export const state = () => ({
             "Website"
           ]
         },
+        {
+          id: uuidv4(),
+          icon: "external-link",
+          url: [
+            "https://nodebb.org/blog/the-faceless-master/"
+          ],
+          urlText: [
+            "The Faceless Master - NodeBB Developer Blog"
+          ]
+        }
       ],
     },
     {
@@ -74,7 +84,7 @@ export const state = () => ({
       tag: "Music Education, Orchestra, Strings",
       objectivesTitle: "Background",
       objectivesDetails:
-        "As a string educator, my background is in pedagogy and instruction, having earned a Bachelor\'s in Music Education from the University of Louisville. While in college, I had the privilege to study privately with professors specializing in all stringed orchestral instruments. I gained a strong working knowledge of appropriate instrumental technique for children of all ages and abilities. As someone who loves to learn, I have a passion for the process of facilitating positive learning experiences for others.",
+        "As an educator, my background is in string pedagogy and instruction. Through college and professional learning, I have gained a strong working knowledge of appropriate instrumental techniques for children of all ages and abilities. As someone who loves to learn, I have a passion for the process of facilitating positive learning experiences for others.",
       projectImages: [
         {
           id: uuidv4(),
@@ -83,12 +93,12 @@ export const state = () => ({
         },
       ],
       technologies: [],
-      linkTitle: "Link",
+      linkTitle: "",
       links: [
         {
           id: uuidv4(),
           url: [
-            "test",
+            "",
           ],
           urlText: [ " ",
 
@@ -105,7 +115,7 @@ export const state = () => ({
       tag: "Software Development",
       objectivesTitle: "Objective",
       objectivesDetails:
-        "My wife, Stephanie, and I are looking to buy a home soon\u2122 and I thought a program that stored an inventory of music, electronic equipment, and miscellaneous items may be helpful in the midst of our transition. This project serves as a final project for the first course of C# Software Development in Code Louisville's Bootcamp. ",
+        "My wife, Stephanie, and I are looking to buy a home soon\u2122 and I am building an inventory management program that we could use to help in the transition. This project serves as a project for the first course of C# Software Development in Code Louisville's Bootcamp. My goal is to develop a C# console application and continue development in the next course by building its web-based GUI. ",
       techTitle: "Tools & Technologies",
       projectImages: [
         {
@@ -115,14 +125,15 @@ export const state = () => ({
         },
       ],
       technologies: [
-        "C#"
+        "C#",
+        ".NET5.0"
       ],
       linkTitle: "Download Wireframe",
       links: [
         {
           id: uuidv4(),
           icon: "download",
-          download: "/Weiner-Resume.pdf",
+          download: "/nweiner_inventory_console_app_wireframe.png",
           url: [],
           urlText: []
         },
@@ -176,7 +187,7 @@ export const state = () => ({
       tag: "Bootstrap 4, HTML, CSS",
       objectivesTitle: "Objective",
       objectivesDetails:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.",
+        "This was a project for my first course in Code Louisville. The portfolio's intended purpose was to demonstrate present and past accomplishments. The website featured three categories of content: Latest Projects, Experience, and Professional Interests.",
       techTitle: "Tools & Technologies",
       projectImages: [
         {

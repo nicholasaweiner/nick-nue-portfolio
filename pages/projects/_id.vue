@@ -124,7 +124,7 @@ export default {
           <div class="w-full text-left">
             <!-- Single project objectives -->
             <div 
-              v-if="project.ObjectivesTitle"
+              v-if="project.objectivesTitle"
               class="mb-7">
               <p
                 class="
