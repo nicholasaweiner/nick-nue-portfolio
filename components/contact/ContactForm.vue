@@ -197,7 +197,7 @@ export default {
             <small>Please enter valid e-mail address</small>
           </span>
         </p>
-
+        <!-- Message Label and Input -->
         <p v-bind:class="{ 'block': $v.form.message.$error }">
           <label
             class="block text-lg text-primary-dark dark:text-primary-light mb-2"
@@ -236,7 +236,7 @@ export default {
             <small>Message must have at least {{ $v.form.message.$params.minLength.min }} letters.</small>
           </span>
         </p>
-
+        <!-- Submit Button -->
         <p>
           <Button
             title="Send Message"
@@ -260,126 +260,6 @@ export default {
       </form>
     </div>
   </div>
-  <!-- Contact form
-      <form
-        @submit="(e) => { e.preventDefault; }"
-        action="https://getform.io/f/0c6790a5-fc37-4cf4-a889-461c353d2bf4" 
-        method="POST"
-        class="font-general-regular space-y-7"
-      >
-        <div>
-        <div class="mt-6">
-          <label
-            class="block text-lg text-primary-dark dark:text-primary-light mb-2"
-            for="email"
-            >Email</label
-          >
-          <input
-            class="
-              w-full
-              px-5
-              py-2
-              border border-gray-300
-              dark:border-primary-dark
-              border-opacity-50
-              text-primary-dark
-              dark:text-secondary-light
-              bg-ternary-light
-              dark:bg-ternary-dark
-              rounded-md
-              shadow-sm
-              text-md
-            "
-            id="email"
-            name="email"
-            type="text"
-            required=""
-            placeholder="Your Email"
-            aria-label="Email"
-          />
-        </div>
-        <div class="mt-6">
-          <label
-            class="block text-lg text-primary-dark dark:text-primary-light mb-2"
-            for="subject"
-            >Subject</label
-          >
-          <input
-            class="
-              w-full
-              px-5
-              py-2
-              border border-gray-300
-              dark:border-primary-dark
-              border-opacity-50
-              text-primary-dark
-              dark:text-secondary-light
-              bg-ternary-light
-              dark:bg-ternary-dark
-              rounded-md
-              shadow-sm
-              text-md
-            "
-            id="subject"
-            name="subject"
-            type="text"
-            required=""
-            placeholder="Subject"
-            aria-label="Subject"
-          />
-        </div>
-
-        <div class="mt-6">
-          <label
-            class="block text-lg text-primary-dark dark:text-primary-light mb-2"
-            for="message"
-            >Message</label
-          >
-          <textarea
-            class="
-              w-full
-              px-5
-              py-2
-              border border-gray-300
-              dark:border-primary-dark
-              border-opacity-50
-              text-primary-dark
-              dark:text-secondary-light
-              bg-ternary-light
-              dark:bg-ternary-dark
-              rounded-md
-              shadow-sm
-              text-md
-            "
-            id="message"
-            name="message"
-            cols="14"
-            rows="6"
-            aria-label="Message"
-          ></textarea>
-        </div>
-
-        <div class="mt-6">
-          <Button
-            title="Send Message"
-            class="
-              px-4
-              py-2.5
-              text-white
-              tracking-wider
-              bg-indigo-500
-              hover:bg-indigo-600
-              focus:ring-1 focus:ring-indigo-900
-              rounded-lg
-              duration-500
-            "
-            type="submit"
-            aria-label="Send Message"
-          />
-        </div>
-      </form>
-    </div>
-  </div> -->
 </template>
 
 <style lang="scss" scoped>
