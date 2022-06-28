@@ -40,7 +40,14 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: [
+    '@nuxtjs/axios',
+  ],
+
+  axios: {
+    // extra config e.g
+    BaseURL: 'https://getform.io/f/0c6790a5-fc37-4cf4-a889-461c353d2bf4'
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
