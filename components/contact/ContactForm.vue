@@ -1,6 +1,6 @@
 <script>
 import Button from "../reusable/Button.vue";
-import { required, minLength } from 'vuelidate/lib/validators'
+import { required, minLength, email } from 'vuelidate/lib/validators'
 
 export default {
   components: { 
@@ -11,7 +11,9 @@ export default {
     return {
       form: {
         name: '',
-        job: '',
+        email: '',
+        subject: '',
+        message: '',
       },
     }
   },
@@ -21,16 +23,27 @@ export default {
 					required,
 					minLength: minLength( 4 )
 				},
-				job: {
-					required
-				}
-			},
+				email: {
+          required,
+          email
+        },
+        subject: {
+          required,
+          minLength: minLength( 5 )
+        },
+        message: {
+          required,
+          minLength: minLength ( 4 )
+        },
+		},
   },
   methods: {
     submitForm() {
       let contactFormData = new FormData();
       contactFormData.set( 'name', this.form.name );
-      contactFormData.set( 'job', this.form.job );
+      contactFormData.set( 'subject', this.form.subject );
+      contactFormData.set( 'email', this.form.email );
+      contactFormData.set( 'message', this.form.message );
       console.log( 'submitting data...' );
       axios( {
         method: 'post',
@@ -51,36 +64,7 @@ export default {
 </script>
 
 <template>
-  <!-- Alternate Contact form -->
-  <form class="form">
-	<!-- <form v-on:submit.prevent="submitForm"> -->
-		<p v-bind:class="{ 'fld-error': $v.form.name.$error }">
-			<label>Name</label><br>
-			<input type="text" v-model.trim="form.name" @input="$v.form.name.$touch()">
-
-			<span class="msg-error" v-if="!$v.form.name.required">
-				<small>Field is required</small>
-			</span>
-			<span class="msg-error" v-if="!$v.form.name.minLength">
-				<small>Name must have at least {{ $v.form.name.$params.minLength.min }} letters.</small>
-			</span>
-		</p>
-
-		<p v-bind:class="{ 'fld-error': $v.form.job.$error }">
-			<label>Job</label><br>
-			<input type="text" v-model="form.job" @input="$v.form.job.$touch()">
-
-			<span class="msg-error" v-if="!$v.form.job.required">
-				<small>Field is required</small>
-			</span>
-		</p>
-
-		<p>
-			<button type="submit" @click.prevent="submitForm" :disabled="$v.form.$invalid">Send</button>
-		</p>
-	</form>
-  <!-- Contact form -->
-  <!-- <div class="w-full md:w-1/2">
+  <div class="w-full md:w-1/2">
     <div
       class="
         leading-loose
@@ -105,18 +89,53 @@ export default {
       >
         Contact Form
       </p>
-      <form
-        @submit="(e) => { e.preventDefault; }"
-        action="https://getform.io/f/0c6790a5-fc37-4cf4-a889-461c353d2bf4" 
-        method="POST"
-        class="font-general-regular space-y-7"
-      >
-        <div>
-          <label
-            class="block text-lg text-primary-dark dark:text-primary-light mb-2"
+  <!-- Alternate Contact form -->
+      <form class="font-general-regular space-y-7">
+      <!-- Name Label and Input -->
+        <p v-bind:class="{ 'block': $v.form.name.$error }">
+          <label 
+            class="
+            block 
+            text-lg 
+            text-primary-dark 
+            dark:text-primary-light 
+            mb-2
+          " 
             for="name"
-            >Full Name</label
-          >
+          >Full Name
+          </label>
+          <input 
+            type="text" 
+            v-model.trim="form.name"
+            @input="$v.form.name.$touch()"
+            class="
+             w-full
+              px-5
+              py-2
+              border border-gray-300
+              dark:border-primary-dark
+              border-opacity-50
+              text-primary-dark
+              dark:text-secondary-light
+              bg-ternary-light
+              dark:bg-ternary-dark
+              rounded-md
+              shadow-sm
+              text-md
+            ">
+          <span class="block" v-if="!$v.form.name.required">
+            <small>Field is required</small>
+          </span>
+          <span class="block" v-if="!$v.form.name.minLength">
+            <small>Name must have at least {{ $v.form.name.$params.minLength.min }} letters.</small>
+          </span>
+        </p>
+        <!-- Subject Label and Input -->
+        <p v-bind:class="{ 'block': $v.form.subject.$error }">
+          <label
+              class="block text-lg text-primary-dark dark:text-primary-light mb-2"
+              for="subject">Subject
+          </label>
           <input
             class="
               w-full
@@ -133,14 +152,122 @@ export default {
               shadow-sm
               text-md
             "
-            id="name"
-            name="name"
+            id="subject"
+            name="subject"
             type="text"
             required=""
-            placeholder="Your Name"
-            aria-label="Name"
+            placeholder="Subject"
+            aria-label="Subject"
+            v-model="form.subject" 
+            @input="$v.form.subject.$touch()"
           />
-        </div>
+          <span class="block" v-if="!$v.form.subject.required">
+            <small>Field is required</small>
+          </span>
+          <span class="block" v-if="!$v.form.subject.minLength">
+            <small>Subject must have at least {{ $v.form.subject.$params.minLength.min }} letters.</small>
+          </span>
+        </p>
+        <!-- Email Label and Input -->
+        <p v-bind:class="{ 'block': $v.form.email.$error }">
+          <label>E-mail</label>
+          <input 
+            type="text" 
+            v-model="form.email" 
+            @input="$v.form.email.$touch()"
+            class="
+              w-full
+              px-5
+              py-2
+              border border-gray-300
+              dark:border-primary-dark
+              border-opacity-50
+              text-primary-dark
+              dark:text-secondary-light
+              bg-ternary-light
+              dark:bg-ternary-dark
+              rounded-md
+              shadow-sm
+              text-md
+              ">
+          <span class="block" v-if="!$v.form.email.required">
+            <small>Field is required</small>
+          </span>
+          <span class="block" v-if="!$v.form.email.email">
+            <small>Please enter valid e-mail address</small>
+          </span>
+        </p>
+
+        <p v-bind:class="{ 'block': $v.form.message.$error }">
+          <label
+            class="block text-lg text-primary-dark dark:text-primary-light mb-2"
+            for="message">
+            Message
+          </label>
+          <textarea
+            class="
+              w-full
+              px-5
+              py-2
+              border border-gray-300
+              dark:border-primary-dark
+              border-opacity-50
+              text-primary-dark
+              dark:text-secondary-light
+              bg-ternary-light
+              dark:bg-ternary-dark
+              rounded-md
+              shadow-sm
+              text-md
+            "
+            id="message"
+            name="message"
+            cols="14"
+            rows="6"
+            v-model="form.message" 
+            @input="$v.form.message.$touch()"
+            aria-label="Message"
+            placeholder="Type Message Here">
+          </textarea>
+          <span class="block" v-if="!$v.form.message.required">
+            <small>Field is required</small>
+          </span>
+          <span class="block" v-if="!$v.form.message.minLength">
+            <small>Message must have at least {{ $v.form.message.$params.minLength.min }} letters.</small>
+          </span>
+        </p>
+
+        <p>
+          <Button
+            title="Send Message"
+            class="
+              px-4
+              py-2.5
+              text-white
+              tracking-wider
+              bg-indigo-500
+              hover:bg-indigo-600
+              focus:ring-1 focus:ring-indigo-900
+              rounded-lg
+              duration-500
+            "
+            type="submit"
+            aria-label="Send Message"
+            @click.prevent="submitForm" 
+            :disabled="$v.form.$invalid"
+          />
+        </p>
+      </form>
+    </div>
+  </div>
+  <!-- Contact form
+      <form
+        @submit="(e) => { e.preventDefault; }"
+        action="https://getform.io/f/0c6790a5-fc37-4cf4-a889-461c353d2bf4" 
+        method="POST"
+        class="font-general-regular space-y-7"
+      >
+        <div>
         <div class="mt-6">
           <label
             class="block text-lg text-primary-dark dark:text-primary-light mb-2"
@@ -255,11 +382,6 @@ export default {
   </div> -->
 </template>
 
-<style type="text/css">
-	.fld-error .msg-error  {
-		display: block;
-	}
-	.msg-error {
-		display: none;
-	}
+<style lang="scss" scoped>
+
 </style>
