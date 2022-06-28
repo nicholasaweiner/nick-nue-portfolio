@@ -18,7 +18,7 @@ export const state = () => ({
         {
           id: 1,
           title: "Abe Weiner Paintings",
-          img: "../images/web-project-2.jpg",
+          img: "../../images/web-project-2.jpg",
         },
       ],
       technologies: [
