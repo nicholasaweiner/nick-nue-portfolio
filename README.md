@@ -11,7 +11,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - @NuxtJS/Axios POST to Getform.io
 - Conditional rendering in `pages/projects/_id.vue` based on keys in projects object
 - Conditional rendering with external links/icons for projects
-- Changelog in `README.md` for updates to portfolio
+- Changelog in `README.md` for updates to portfolio. Updates in this entry include about a week's work. I will update changelog with daily changes in future.
 
 ### Removed
 - Client Information from About Component
