@@ -10,7 +10,7 @@ export const state = () => ({
       img: "images/web-project-2.jpg",
       publishDate: "May 15, 2022",
       tag: "Family, Elementor, WordPress",
-      objectivesTitle: "Objective",
+      objectivesTitle: "Objectiv",
       objectivesDetails:
         "I felt compelled to develop this site because, of those in my family, I had some technical experience with web design. Not long after starting, this project connected me with the grandfather I never had an opportunity to really know. I was captivated by his art. He was quite the painter in his time. Once featured in TIME Magazine in 1950, Grandpa won several prestigious artistic awards, with pieces showcased in New York, Pittsburgh, Chicago and Washington D.C. I found the time I had with each of his paintings to be a visually moving experience. I have enjoyed the incredible experience in sharing this project with a group of his former students at the Ivy School of Professional Art in Pittsburgh, who often share memorable stories of their experiences with him as a teacher and friend. This is the second iteration of the project, developed late last year using Elementor, a Wordpress plugin.",
       techTitle: "Tools & Technologies",
