@@ -193,7 +193,7 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "Bootstrap 4 Portfolio",
-          img: "images/web-project-1.jpg",
+          img: "images/ui-project-2.jpg",
         },
       ],
       technologies: [
