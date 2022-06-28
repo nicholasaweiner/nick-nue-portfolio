@@ -18,7 +18,7 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "Abe Weiner Paintings",
-          img: "../images/web-project-2.jpg",
+          img: "images/web-project-2.jpg",
         },
       ],
       technologies: [
@@ -58,7 +58,7 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "Music Performance",
-          img: "../images/mobile-project-2.jpg",
+          img: "images/mobile-project-2.jpg",
         },
       ],
       technologies: [],
@@ -89,7 +89,7 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "Orchestra Director",
-          img: "../images/mobile-project-1.jpg",
+          img: "images/mobile-project-1.jpg",
         },
       ],
       technologies: [],
@@ -121,7 +121,7 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "Inventory Management Console App",
-          img: "../images/ui-project-1.jpg",
+          img: "images/ui-project-1.jpg",
         },
       ],
       technologies: [
@@ -133,7 +133,7 @@ export const state = () => ({
         {
           id: uuidv4(),
           icon: "download",
-          download: "/nweiner_inventory_console_app_wireframe.png",
+          download: "nweiner_inventory_console_app_wireframe.png",
           url: [],
           urlText: []
         },
@@ -154,7 +154,7 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "Cryptocurrency Budget Tool",
-          img: "../images/web-project-1.jpg",
+          img: "images/web-project-1.jpg",
         },
       ],
       technologies: [
@@ -193,7 +193,7 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "Bootstrap 4 Portfolio",
-          img: "../images/web-project-1.jpg",
+          img: "images/web-project-1.jpg",
         },
       ],
       technologies: [

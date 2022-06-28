@@ -62,7 +62,7 @@ export default {
       </p>
       <div class="flex justify-center sm:block">
         <a
-          href="/Weiner-Resume.pdf"
+          href="Weiner-Resume.pdf"
           download=""
           class="
             flex
