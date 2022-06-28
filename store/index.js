@@ -16,7 +16,7 @@ export const state = () => ({
       techTitle: "Tools & Technologies",
       projectImages: [
         {
-          id: uuidv4(),
+          id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccdc",
           title: "Abe Weiner Paintings",
           img: "images/web-project-2.jpg",
         },
