@@ -1,6 +1,6 @@
 <script>
 export default {
-  props: ["isOpen", "showModal", "modal", "categories"],
+  props: ["isOpen", "categories"],
 };
 </script>
 
