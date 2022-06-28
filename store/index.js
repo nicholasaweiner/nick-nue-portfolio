@@ -16,7 +16,7 @@ export const state = () => ({
       techTitle: "Tools & Technologies",
       projectImages: [
         {
-          id: 1,
+          id: uuidv4(),
           title: "Abe Weiner Paintings",
           img: "images/web-project-2.jpg",
         },
@@ -56,7 +56,7 @@ export const state = () => ({
       tag: "Cello, Performance",
       projectImages: [
         {
-          id: 2,
+          id: uuidv4(),
           title: "Music Performance",
           img: "images/mobile-project-2.jpg",
         },
@@ -87,7 +87,7 @@ export const state = () => ({
         "As an educator, my background is in string pedagogy and instruction. Through college and professional learning, I have gained a strong working knowledge of appropriate instrumental techniques for children of all ages and abilities. As someone who loves to learn, I have a passion for the process of facilitating positive learning experiences for others.",
       projectImages: [
         {
-          id: 3,
+          id: uuidv4(),
           title: "Orchestra Director",
           img: "images/mobile-project-1.jpg",
         },
@@ -119,7 +119,7 @@ export const state = () => ({
       techTitle: "Tools & Technologies",
       projectImages: [
         {
-          id: 4,
+          id: uuidv4(),
           title: "Inventory Management Console App",
           img: "images/ui-project-1.jpg",
         },
@@ -152,7 +152,7 @@ export const state = () => ({
       techTitle: "Tools & Technologies",
       projectImages: [
         {
-          id: 5,
+          id: uuidv4(),
           title: "Cryptocurrency Budget Tool",
           img: "images/web-project-1.jpg",
         },
@@ -191,7 +191,7 @@ export const state = () => ({
       techTitle: "Tools & Technologies",
       projectImages: [
         {
-          id: 6,
+          id: uuidv4(),
           title: "Bootstrap 4 Portfolio",
           img: "images/ui-project-2.jpg",
         },
