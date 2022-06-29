@@ -1,7 +1,6 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
-  mode: "spa",
   router: {
     base: "/nick-nuxtjs-tailwindcss-portfolio/"
   },
