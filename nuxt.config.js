@@ -44,7 +44,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/axios', "@nuxtjs/sitemap",
+    '@nuxtjs/axios'
   ],
 
   axios: {
@@ -54,12 +54,6 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   builds: [
-    {
-      src: "nuxt.config.js",
-      use: "@nuxtjs/now-builder",
-      config: {
-        serverFiles: ["./.nuxt/dist/sitemap-routes.json"],
-      },
-    },
+    
   ],
 };
