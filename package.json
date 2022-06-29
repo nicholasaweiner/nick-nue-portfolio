@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "yarn run build",
-    "start": "yarn start-- --hostname 0.0.0.0 --port 3000",
-    "generate": "yarn generate"
+    "build": "nuxt build",
+    "start": "nuxt start-- --hostname 0.0.0.0 --port 3000",
+    "generate": "nuxt generate"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
