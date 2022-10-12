@@ -2,7 +2,7 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "server",
   router: {
-    base: "/nick-nuxtjs-tailwindcss-portfolio/"
+    base: "/app/"
   },
   colorMode: {
     classSuffix: "",
