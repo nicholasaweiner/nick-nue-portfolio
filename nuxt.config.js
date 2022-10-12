@@ -2,7 +2,7 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "server",
   router: {
-    base: "/app/"
+    base: "/"
   },
   colorMode: {
     classSuffix: "",
