@@ -220,7 +220,7 @@ export const state = () => ({
   aboutMe: [
     {
       id: uuidv4(),
-      bio: "Hi! My name is Nick and I'm from Louisville, Kentucky. I currently serve as a high school orchestra director here in Louisville. I am particularly passionate about innovation in tech and education. I recently completed Code Louisville's Web Development Pathway. Prior to this, I earned a Masters in Educational Leadership with an emphasis in Educational Technology from the University of Kentucky. Prior to teaching, I attended the University of Louisville on a music scholarship graduating with a Bachelor\'s in Music Education. I perform actively as a professional cellist in the Louisville area.",
+      bio: "Hi! My name is Nick and I'm from Louisville, Kentucky. I serve as a high school orchestra director in Louisville, Kentucky. I am particularly passionate about innovation in tech and education. I'm currently a Masters student in Human-Computer Interaction at Indiana University-Purdue University Indianapolis (IUPUI). I recently completed Code Louisville's Web Development Pathway. I have earned a Masters in Educational Leadership with an emphasis in Educational Technology from the University of Kentucky. Prior to teaching, I attended the University of Louisville on a music scholarship graduating with a Bachelor\'s in Music Education. I perform actively as a professional cellist in the Louisville area.",
     },
     {
       id: uuidv4(),
@@ -233,7 +233,7 @@ export const state = () => ({
       id: uuidv4(),
       name: "GitHub",
       icon: "github",
-      url: "https://github.com/signalaero",
+      url: "https://github.com/nicholasaweiner",
     },
     {
       id: uuidv4(),
