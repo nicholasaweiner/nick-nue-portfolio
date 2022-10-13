@@ -1,6 +1,6 @@
 # Nick's Nue Portfolio
 
-Link to project: [https://nicholasweiner.com/nick-nuxtjs-tailwindcss-portfolio/](https://nicholasweiner.com/nick-nuxtjs-tailwindcss-portfolio/)
+Link to project: [https://nicholasweiner.com)
 
 # Changelog
 All notable changes to this project will be documented in this file.
