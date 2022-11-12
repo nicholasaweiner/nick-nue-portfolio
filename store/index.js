@@ -115,7 +115,7 @@ export const state = () => ({
       tag: "Software Development",
       objectivesTitle: "Objective",
       objectivesDetails:
-        "My wife, Stephanie, and I are looking to buy a home soon\u2122 and I am building an inventory management program that we could use to help in the transition. This project serves as a project for the first course of C# Software Development in Code Louisville's Bootcamp. My goal is to develop a C# console application and continue development in the next course by building its web-based GUI. ",
+        "Console app for Inventory Management. I created this to help organize personal items to prepare for a move. This was my first project using C#. ",
       techTitle: "Tools & Technologies",
       projectImages: [
         {
@@ -128,14 +128,26 @@ export const state = () => ({
         "C#",
         ".NET5.0"
       ],
-      linkTitle: "Download Wireframe",
+      linkTitle: "Links",
       links: [
+        {
+          id: uuidv4(),
+          icon: "github",
+          url: [
+            "https://github.com/nicholasaweiner/inventory-mgmt"
+          ],
+          urlText: [
+            "Inventory Management Tool"
+          ]
+        },
         {
           id: uuidv4(),
           icon: "download",
           download: "nweiner_inventory_console_app_wireframe.png",
           url: [],
-          urlText: []
+          urlText: [
+            "Wireframe"
+          ]
         },
       ],
     },
@@ -170,7 +182,7 @@ export const state = () => ({
           id: uuidv4(),
           icon: "github",
           url: [
-            "https://github.com/signalaero/crypto-budget-tool",
+            "https://github.com/nicholasaweiner/crypto-budget-tool",
           ],
           urlText: [
             "Cryptocurrency Budget Tool"
@@ -208,7 +220,7 @@ export const state = () => ({
           id: uuidv4(),
           icon: "github",
           url: [
-            "https://github.com/signalaero/nick_digital_portfolio",
+            "https://github.com/nicholasaweiner/nick_digital_portfolio",
           ],
           urlText: [
             "Bootstrap Portfolio"
@@ -245,7 +257,7 @@ export const state = () => ({
       id: uuidv4(),
       name: "Twitter",
       icon: "twitter",
-      url: "https://twitter.com/signaltwelve",
+      url: "https://twitter.com/nicholasaweiner",
     },
   ],
   categories: [

@@ -206,21 +206,19 @@ export default {
                     :class="
                       'hover:underline cursor-pointer'
                     "
-                  >Download</a>
-                  <a
-                    :href="link.url"
-                    target="_blank"
-                    class="
+                  >{{ link.urlText.join(", ") }}</a>
+                  <a v-else
+                  :href="link.url"
+                  download=""
+                  class="
                       text-lg 
                       mb-4 
                       text-ternary-dark 
                       dark:text-ternary-light"
-                    :class="
-                      'hover:underline cursor-pointer'
+                  :class="
+                    'hover:underline cursor-pointer'
                     "
-                    aria-label="Website"
-                  >
-                    {{ link.urlText.join(", ") }}
+                  >{{ link.urlText.join(", ") }}
                   </a>
                 </li>
               </ul>
